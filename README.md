@@ -55,7 +55,7 @@ These are common things I do when I create a ubuntu server
 ### Run a startup script at boot (non root)
 1) Navigate to home
 2) Create startup script file: `nano startup-script.sh`
-3) Make it executable: `//TODO`
+3) Make it executable: `chmod +x startup-script.sh`
 4) Open Cron: `crontab -e`
 5) Add `@reboot /home/user/startup-script.sh` to the end of the file
 6) Exit & test!
@@ -63,7 +63,7 @@ These are common things I do when I create a ubuntu server
 ### Run a startup script at boot (ROOT)
 1) Navigate to home
 2) Create startup script file: `nano startup-script-root.sh`
-3) Make it executable: `//TODO`
+3) Make it executable: `chmod +x startup-script-root.sh`
 4) Open Cron: `sudo crontab -e`
 5) Add `@reboot /home/user/startup-script-root.sh` to the end of the file
 6) Exit & test!
@@ -75,7 +75,7 @@ These are common things I do when I create a ubuntu server
 //TODO
 
 #### Install NGINX
-//TODO
+`sudo apt install nginx`
 
 #### Configuring NGINX
 //TODO
@@ -85,7 +85,7 @@ These are common things I do when I create a ubuntu server
 2) `sudo systemctl status nginx`
 
 ### Installing MYSQL
-//TODO
+`sudo apt install mysql-server mysql-common`
 
 ### Create SAMBA share
 Instructions how to do everything with SAMBA and get it working with Windows.
